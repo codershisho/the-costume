@@ -22,6 +22,7 @@ services:
       HOST: 0.0.0.0
     ports:
       - 3000:3000
+      - 24678:24678 # HMR用のポートを追加
     volumes:
       - .:/var/www
     stdin_open: true
