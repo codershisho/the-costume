@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
+  modules: ["@nuxtjs/supabase"],
   css: [
     "~/assets/css/main.css",
     "vuetify/lib/styles/main.sass",
