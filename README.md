@@ -4,3 +4,5 @@
   - `npx nuxi@latest init`
 - tailwind
   - [link](https://tailwindcss.com/docs/guides/nuxtjs#standard)
+- sqlite の GUI
+  - `npx prisma studio`
