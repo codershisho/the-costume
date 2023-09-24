@@ -11,7 +11,19 @@ datasource db {
 }
 
 model Task {
-  id      Int      @id @default(autoincrement())
-  task   String
-  completed    Boolean
+  id        Int     @id @default(autoincrement())
+  task      String
+  completed Boolean
+}
+
+model Customer {
+  id             Int     @id @default(autoincrement())
+  name           String
+  phone          String
+  mail           String?
+  post_code      String?
+  address        String?
+  age            Int?    @default(0)
+  use_count      Int?    @default(0)
+  attention_flag Int
 }

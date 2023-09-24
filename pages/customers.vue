@@ -81,39 +81,41 @@ type Customer = {
   attention_flag: Boolean;
 };
 
-const customers = ref<Customer[]>([
-  {
-    id: 1,
-    name: "XXXXXX",
-    phone: "090-1111-1111",
-    mail: "aaaa@example.com",
-    post_code: "999-9999",
-    address: "ZZZZZZZZZZZZ",
-    age: 1,
-    use_count: 1,
-    attention_flag: false,
-  },
-  {
-    id: 2,
-    name: "XXXXXX",
-    phone: "090-1111-1111",
-    mail: "aaaa@example.com",
-    post_code: "999-9999",
-    address: "ZZZZZZZZZZZZ",
-    age: 1,
-    use_count: 3,
-    attention_flag: true,
-  },
-  {
-    id: 3,
-    name: "XXXXXX",
-    phone: "090-1111-1111",
-    mail: "aaaa@example.com",
-    post_code: "999-9999",
-    address: "ZZZZZZZZZZZZ",
-    age: 1,
-    use_count: 6,
-    attention_flag: false,
-  },
-]);
+// const customers = ref<Customer[]>([
+//   {
+//     id: 1,
+//     name: "XXXXXX",
+//     phone: "090-1111-1111",
+//     mail: "aaaa@example.com",
+//     post_code: "999-9999",
+//     address: "ZZZZZZZZZZZZ",
+//     age: 1,
+//     use_count: 1,
+//     attention_flag: false,
+//   },
+//   {
+//     id: 2,
+//     name: "XXXXXX",
+//     phone: "090-1111-1111",
+//     mail: "aaaa@example.com",
+//     post_code: "999-9999",
+//     address: "ZZZZZZZZZZZZ",
+//     age: 1,
+//     use_count: 3,
+//     attention_flag: true,
+//   },
+//   {
+//     id: 3,
+//     name: "XXXXXX",
+//     phone: "090-1111-1111",
+//     mail: "aaaa@example.com",
+//     post_code: "999-9999",
+//     address: "ZZZZZZZZZZZZ",
+//     age: 1,
+//     use_count: 6,
+//     attention_flag: false,
+//   },
+// ]);
+
+const { data: customers } = useFetch("/api/customer");
 </script>
