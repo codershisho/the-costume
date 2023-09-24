@@ -47,4 +47,9 @@ export default defineNuxtConfig({
     strict: true, // 型チェックを厳格化
     typeCheck: false, // nuxt devまたはnuxt build時に型チェックを実行
   },
+  supabase: {
+    url: process.env.SUPABASE_URL,
+    key: process.env.SUPABASE_KEY,
+    redirect: false,
+  },
 });
